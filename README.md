@@ -2,6 +2,8 @@
 
 Windows app for editing Skylanders. Works with a Portal of Power or an NFC reader. You can dump figures, back them up, and edit saves.
 
+![Skylander Editor](images/image.png)
+
 Download the latest `Skylander Editor X.Y.Z.exe` from this repo (version is in the filename). The latest version number is also in the `version` file. Keep `libusb-1.0.dll` next to the exe.
 
 **Portals**
