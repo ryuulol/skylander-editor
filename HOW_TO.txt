@@ -1,0 +1,44 @@
+Skylander Editor
+
+Run Skylander Editor.exe. libusb-1.0.dll is extracted next to the exe automatically if missing.
+
+Portals
+- Wii / PS3 / PS4 / Wii U: plug in and it should connect.
+- Xbox 360: Windows needs WinUSB or libusbK. Use Install driver or Open Zadig, then Rescan.
+- Xbox One / Series: not supported. Those pads use Microsoft GIP. Use a Wii/PS/Wii U or Xbox 360 portal instead.
+
+NFC (optional)
+- Use an ACR122U-class USB reader.
+- Install driver tries ACS PC/SC via winget. If that fails, install the PC/SC driver for your dongle from the maker, then Refresh.
+- Read tag, Write loaded, Write dump file, or Write selected dump.
+- Write loaded applies the form edits (gold/XP/cosmetics/etc.) first, then writes the tag.
+- Tag UID is never rewritten. Blank cards get character data; existing figures must match the same character.
+
+Editing
+- Form edits apply on Write to figure, Save, Export, and NFC Write loaded.
+- Skylanders / Sensei: gold, XP, hero, hat, nickname, skill path, SSA + Giants+ heroics, Giants quests, SWAP Force quests.
+- SWAP Force halves: edit each half; duo pad when both are live.
+- Traps: trapped villain + evolved only.
+- Vehicles: XP, gearbits, shield/weapon, Performance/Specialty/Horn, Boom deco/topper/neon/shout + set presets. Max all maxes XP/gearbits/shield/weapon.
+- Crystals: gold, nickname, Imaginator parts (CYOS).
+- Items / adventure packs: dump and library only (unlock tags).
+- Racing villains (3440–3467): no skill upgrade names in game files. Alt Nightfall (3527) uses Nightfall's skill tree.
+- Some hat IDs are cut/unused slots with no English title in the dumps.
+
+Dumps
+- Drag a .bin or .dump onto the window, or use Library / Pack / Backups.
+- Files are saved in the dumps folder next to the exe.
+- Write is never automatic. Confirm first. A backup is saved before a portal write.
+- Right-click a saved dump and choose Write onto toy to send that file to the matching figure.
+- Auto-backup on read skips creating another file when an identical backup already exists.
+
+Updates
+- Settings → Check for updates reads https://raw.githubusercontent.com/ryuulol/skylander-editor/main/version
+- Download manually opens the new Skylander Editor X.Y.Z.exe from GitHub.
+- Install update downloads that exe next to the app, replaces the old one, and relaunches.
+- Keep versioned filenames (Skylander Editor X.Y.Z.exe), not a bare Skylander Editor.exe.
+
+Safety
+- The toy identity is never rewritten.
+- Closing the app does not turn the portal off.
+- Sector 0, lock blocks, and Imaginator signature blocks are never written.
