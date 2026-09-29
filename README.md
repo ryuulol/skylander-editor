@@ -2,11 +2,11 @@
 
 Windows app for editing Skylanders. Works with a Portal of Power or an NFC reader. You can dump figures, back them up, and edit saves.
 
-Download `Skylander Editor 1.2.0.exe` from this repo. Latest version number is in the `version` file. Keep `libusb-1.0.dll` next to the exe.
+Download the latest `Skylander Editor X.Y.Z.exe` from this repo (version is in the filename). The latest version number is also in the `version` file. Keep `libusb-1.0.dll` next to the exe.
 
 **Portals**
 
-Wii, PS3, PS4, and Wii U just work. Xbox 360 needs the driver setup in the app. Xbox One and Series portals are not supported, use a different pad.
+Wii, PS3, PS4, and Wii U just work. Xbox 360 needs the driver setup in the app. Xbox One and Series portals are not supported; use a different pad.
 
 **Editing**
 
